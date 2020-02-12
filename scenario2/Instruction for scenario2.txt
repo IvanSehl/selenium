@@ -1,0 +1,39 @@
+1 Preparation for the test
+
+	1.1 Install python
+		If you have already installed python, you can skip this step.
+		Visit https://www.python.org/downloads/ and download python 
+		for your OS.
+		Open the downloaded file and click next until python is installed.
+		
+	1.2 install selenium for python
+		Open cmd/terminal and set command:
+			pip install selenium
+		Selenium will be install.
+
+	1.3 Install browser Chrome and Firefox	
+
+	1.4 configure driver for testing
+		1.4.1 chromedriver for Chrome
+			chromedriver contained in a folder with test.
+			You can specify the path to it in the file test.py:
+				Chrome(executable_path='/path/to/chromedriver')	# Line 9
+				 For example: Chrome(executable_path='C:\Selenium\scenario2\chromedriver.exe')
+			or put driver on your PATH.
+			
+		1.4.2 geckodriver for Firefox
+			geckodriver contained in a folder with test.
+			You can specify the path to it in the file test.py:
+				Firefox(executable_path='/path/to/geckodriver')	 # Line 8
+				For example: Firefox(executable_path='C:\Selenium\scenario2\geckodriver.exe')
+			or put driver on your PATH.
+	
+2 Testing
+	For testing in Chrome uncomment line 9 and comment line 8 in test.py	
+	For testing in Firefox uncomment line 8 and comment line 9 in test.py
+	
+	Open cmd/Terminal 
+	specify the path to test.py and press Enter:
+		For example 'C:\Selenium\scenario2\test.py' 
+	
+	You will see test result.
